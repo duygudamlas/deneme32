@@ -5,7 +5,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message) => {
   const embed = new Discord.RichEmbed()
   .setTitle("Tıkla ve davet et !")
-  .setAuthor("FrostRot", "https://cdn.discordapp.com/avatars/463351955046006795/bc2c393d05d5d3a3632e7b5f6ea256a3.png?size=2048")
+  .setAuthor("FrostRot", "https://discordapp.com/oauth2/authorize?client_id=463685174048063490&scope=bot&permissions=8")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
@@ -17,7 +17,7 @@ exports.run = (client, message) => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL('https://discordapp.com/api/oauth2/authorize?client_id=463351955046006795&permissions=8&scope=bot')
+  .setURL('https://discordapp.com/oauth2/authorize?client_id=463685174048063490&scope=bot&permissions=8')
 
   message.channel.send({embed});
 };
